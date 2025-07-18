@@ -2,7 +2,7 @@
 import './index.css'
 import { Route, Routes } from 'react-router-dom'
 import LoginPage from './pages/LoginPage.jsx'
-import RegisterPage from './pages/RegisterPage.jsx'
+import RegisterPage from './pages/registerPage.jsx'
 
 function App() {
   return (
