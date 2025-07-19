@@ -3,7 +3,7 @@ import cors from "cors";
 import { PORT } from "./config/config.js";
 import { connectDB } from "./config/config.js";
 import userRoute from "./routes/userRoute.js";
-
+import productRoute from "./routes/productRoute.js"
 
 const app = express();
 await connectDB();
@@ -12,7 +12,7 @@ await connectDB();
 app.use(cors());
 app.use(express.json());
 app.use('/api/users', userRoute);
-
+app.use('/',productRoute);
 
 
 app.listen(PORT, ()=>{
